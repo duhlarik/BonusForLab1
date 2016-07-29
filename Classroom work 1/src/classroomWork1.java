@@ -6,20 +6,19 @@ public class classroomWork1 {
 
 		Scanner scan1 = new Scanner(System.in);
 
-		float length;
-		float width;
-		float height;
+		float length, width, height, area, perimeter, volume;
 
 		String answer = "y"; // answer to the question "Do you want to calculate
 								// volume?"
 
 		String choice = "y"; // answer to the question "Do you want to calculate
 								// another room?"
+		
+		System.out.println("Welcome to the area, perimeter and volume calculator!");
 
 		while (choice.equalsIgnoreCase("y")) {
 
-			System.out.println(
-					"Welcome to the area, perimeter and volume calculator!\nPlease enter the length of the room in feet:");
+			System.out.println("Please enter the length of the room in feet:");
 
 			length = scan1.nextFloat(); // collects the user input on the length
 										// of the room
@@ -29,9 +28,9 @@ public class classroomWork1 {
 			width = scan1.nextFloat(); // collects the user input on the width
 										// of the room
 
-			float area = length * width; // calculates the area of the room
+			area = length * width; // calculates the area of the room
 
-			float perimeter = 2 * length + 2 * width; // calculates the perimeter of the room
+			perimeter = 2 * length + 2 * width; // calculates the perimeter of the room
 
 			System.out.println("The area of the room is " + area + " square feet.");
 
@@ -47,7 +46,7 @@ public class classroomWork1 {
 
 				height = scan1.nextFloat(); // collects the user input on the height of the room
 
-				float volume = length * width * height; // calculates the volume of the room
+				volume = length * width * height; // calculates the volume of the room
 
 				System.out.println("The volume of the room is " + volume + " cubic feet.");
 
@@ -68,9 +67,9 @@ public class classroomWork1 {
 
 			}
 
+			System.out.println("Goodbye!");
 		}
 		scan1.close();
-
 	}
 
 }
